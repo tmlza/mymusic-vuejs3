@@ -11,7 +11,7 @@
         </section>
         <div class="controls">
           <button @click="prev" class="Prev">Prev</button>
-          <button @click="play" class="Pre" v-if="!isplaying">Play</button>
+          <button @click="play(current)" class="Pre" v-if="!isplaying">Play</button>
           <button @click="pause" class="Pre" v-else>Pause</button>
           <button @click="next" class="Pre">Next</button>
         </div>
